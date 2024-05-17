@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* VARIABLES */
+:root{
+    /* Color */
+    --checkColor:linear-gradient( to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+html{
+    overflow-x: none;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+     background-color: hsl(236, 33%, 92%);
+     background-image: url('../images/bg-mobile-light.jpg');
+    background-repeat: no-repeat;
+}
+
+
+header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 12px ;
+    text-transform: uppercase;  
+    color: hsl(0, 0%, 98%);
+}
+header button{
+    background-color: transparent;
+    border: none;
+}
+
+
+main{
+    margin-top: 30px;
+    color: hsl(235, 19%, 35%);
+}
+ main button{
+    border: hsl(236, 9%, 61%) 0.5px groove;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    margin: 8px 11px;
+    background-color: transparent;
+
+}
+
+
+input{
+    border-radius: 10px;
+    position: relative;
+    padding: 15px;
+    width: 300px;
+    /* background-color: hsl(0, 0%, 98%); */
+}
+input::placeholder{
+    color: hsl(236, 9%, 61%);
+}
+input::placeholder, input{
+    text-indent: 32px;
+    
+}
+ul{
+padding-top: 10px;
+
+}
+ul li{
+    /* background-color: hsl(0, 0%, 98%); */
+    display: flex;
+    list-style-type: none;
+    
+}
+li input:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+li input :last-child{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+footer{
+    margin: 95px auto;
+    color:hsl(233, 14%, 35%);
+}
+
+.check{
+    /* display: grid;
+    place-content: center; */
+    background-image: linear-gradient( to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+        
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 99px; */
+}
+.checkBG{
+    display: grid;
+    place-content: center;
+    background-image: url('../images/icon-moon.svg') ;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px groove inherit;
+    border-image-outset: none;
+    z-index: 0;
+    outline: 0px groove transparent;
+}
+
+.cross{
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 15px;
+}
+.cr{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -3px;
+    /* z-index: 1;
+    width: 160px; */
+}
+
+
+#error{
+    color: red;
+    margin-top: 10px;
+    display: grid;
+    place-content: center;
+}
+.countainer{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius:8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: hsl(0, 0%, 98%);
+    padding: 12px;
+    color: hsl(236, 9%, 61%);
+}
+
+.div{
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        column-gap: 0px;
+        margin: 45px -10px;
+        width: 300px;
+        padding: 12px;
+        background-color: hsl(0, 0%, 98%);
+    } 
+    
+    .lineThrough {
+        text-decoration: line-through;   
+        color:hsl(236, 9%, 61%);
+    }
+    .open{
+        display: block;
+       
+    }
+
+    
+    /*  || Darkmode stylying */
+    .none{
+        display: none;
+       
+    }
+    .darkmodeInputID{
+        background-color: hsl(235, 24%, 19%);
+        color:hsl(233, 14%, 35%);
+    }
+    .darkmodeBody{
+        background-image: url('../images/bg-mobile-dark.jpg');
+        background-color: hsl(235, 21%, 11%);
+        background-repeat: no-repeat;
+    }
+    .darkmode{
+        background-color: hsl(235, 24%, 19%);
+        color:hsl(233, 14%, 35%);
+        
+    }
+    .darkmodeInput{
+        background-color: hsl(235, 24%, 19%);
+        color:hsl(234, 39%, 85%);
+    }
+    .darkmodeFooter{
+        color:hsl(233, 14%, 35%);
+    }
+
+    .lightmodeInputID{
+        background-color: hsl(0, 0%, 98%);
+    }
+    .lightmodeBody{
+        background-color: hsl(236, 33%, 92%);
+        background-image: url('../images/bg-mobile-light.jpg');
+
+        background-repeat: no-repeat;
+    }
+    .lightmode{
+        background-color: hsl(0, 0%, 98%);
+        padding: 12px;
+        color: hsl(236, 9%, 61%);
+    }
+    .lightmodeInput{
+        background-color: hsl(235, 24%, 19%);
+        color:hsl(234, 39%, 85%);
+    }
+    .lightmodeHeader{
+        color: hsl(0, 0%, 98%);
+    }
+    .lightmodeMain{
+        color: hsl(235, 19%, 35%);
+    }
+
+    /* All, Active, Completed  */
+    
+    .active{
+        display: none;
+       
+    }
+    .all{
+        display: block;
+        place-content: center;
+       
+    }
+    .drag-item{
+        cursor: move;
+    }
+
+
+
+
+
+@media screen and (min-width: 700px){
+    body{
+        background-image: url("../images/bg-desktop-light.jpg");
+    }
+    input{
+        width: 500px;
+        cursor: pointer;
+    }
+    li button:hover{
+
+        border-color:hsl(235, 24%, 19%);
+    }
+
+    .cross{
+        visibility: hidden;
+        margin-left: 450px;
+    }
+    .cross:hover{
+        visibility: hidden;
+        margin-left: 450px;
+    }
+
+    .countainer{
+        margin-top: 1px;
+        gap: 60px;
+        cursor: pointer;
+    }
+    .div{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100px;
+        gap: 15px;
+        margin: -10px auto;
+    }
+    .darkmodeBody{
+        background-image: url('../images/bg-desktop-dark.jpg');
+    }    
+    .lightmodeBody{
+        background-color: hsl(236, 33%, 92%);
+        background-image: url('../images/bg-desktop-light.jpg');
+
+        background-repeat: no-repeat;
+    }
+    
+}
