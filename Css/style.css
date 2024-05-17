@@ -17,6 +17,7 @@ img{
 }
 
 html{
+
     overflow-x: none;
 }
 
@@ -106,19 +107,6 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     /* width: 99px; */
-}
-.checkBG{
-    display: grid;
-    place-content: center;
-    background-image: url('../images/icon-moon.svg') ;
-    width: 28px;
-    height: 28px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0px groove inherit;
-    border-image-outset: none;
-    z-index: 0;
-    outline: 0px groove transparent;
 }
 
 .cross{
